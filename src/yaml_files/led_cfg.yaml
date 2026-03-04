@@ -1,0 +1,3 @@
+/led_panel: #node name
+  ros__parameters:
+    led_states: [1,1,1]
