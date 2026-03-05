@@ -1,0 +1,96 @@
+#debug info
+
+weiyu@weiyu-Legion:~$ ros2 topic echo /goal_pose 
+header:
+  stamp:
+    sec: 1772611119
+    nanosec: 598519845
+  frame_id: base_link
+pose:
+  position:
+    x: -0.5462920665740967
+    y: -0.18228977918624878
+    z: 0.0
+  orientation:
+    x: 0.0
+    y: 0.0
+    z: -0.9854472095687142
+    w: 0.16998175535402263
+---
+
+
+
+rweiyu@weiyu-Legion:~$ ros2 topic echo /initialpose 
+header:
+  stamp:
+    sec: 1772611100
+    nanosec: 818687735
+  frame_id: base_link
+pose:
+  pose:
+    position:
+      x: -0.34023773670196533
+      y: 0.41760313510894775
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.9992521559696328
+      w: 0.038666895272839674
+  covariance:
+  - 0.25
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.25
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.06853891909122467
+---
+
+
+
+weiyu@weiyu-Legion:~$ ros2 run hybrid_algorithm_pkg astarplanner 
+[INFO] [1772611006.053487748] [hybrid_algorithm_planner]: Initial pose received.
+[INFO] [1772611100.819609655] [hybrid_algorithm_planner]: Initial pose received.
+[INFO] [1772611119.599411251] [hybrid_algorithm_planner]: Goal pose received. Starting path planning...
+[WARN] [1772611119.599718265] [hybrid_algorithm_planner]: No map data available. Cannot plan path.
+
+
+weiyu@weiyu-Legion:~$ rviz2
+[INFO] [1772610846.591618858] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1772610846.591692422] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[INFO] [1772610846.626101340] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1772611006.013646892] [rviz2]: Setting estimate pose: Frame:base_link, Position(-1.00981, 0.281143, 0), Orientation(0, 0, -0.994358, 0.106076) = Angle: -2.92904
+[INFO] [1772611100.818698414] [rviz2]: Setting estimate pose: Frame:base_link, Position(-0.340238, 0.417603, 0), Orientation(0, 0, 0.999252, 0.0386669) = Angle: 3.06424
+[INFO] [1772611119.598530513] [rviz2]: Setting goal pose: Frame:base_link, Position(-0.546292, -0.18229, 0), Orientation(0, 0, -0.985447, 0.169982) = Angle: -2.79997
+^C[INFO] [1772611208.534186024] [rclcpp]: signal_handler(signum=2)
+weiyu@weiyu-Legion:~$ 
