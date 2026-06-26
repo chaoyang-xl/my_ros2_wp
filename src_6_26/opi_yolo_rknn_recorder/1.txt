@@ -1,0 +1,392 @@
+weiyu@weiyu-Legion:~/vscode_workspace/ros2_wp$ ros2 topic echo /map --once
+header:
+  stamp:
+    sec: 65
+    nanosec: 542000000
+  frame_id: map
+info:
+  map_load_time:
+    sec: 65
+    nanosec: 542000000
+  resolution: 0.05000000074505806
+  width: 200
+  height: 168
+  origin:
+    position:
+      x: -4.6000000000000005
+      y: -2.4000000000000004
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 1.0
+data:
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- -1
+- '...'
+---
+weiyu@weiyu-Legion:~/vscode_workspace/ros2_wp$ 
+
+weiyu@weiyu-Legion:~/vscode_workspace/ros2_wp$ ros2 topic echo /semantic_projection_node/markers --once
+markers:
+- header:
+    stamp:
+      sec: 1781178376
+      nanosec: 417253748
+    frame_id: map
+  ns: tracked_objects_box
+  id: 0
+  type: 4
+  action: 0
+  pose:
+    position:
+      x: 0.6675415150797075
+      y: 3.167541519386763
+      z: 0.15
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 1.0
+  scale:
+    x: 0.05
+    y: 0.0
+    z: 0.0
+  color:
+    r: 0.20000000298023224
+    g: 0.800000011920929
+    b: 0.30000001192092896
+    a: 0.8999999761581421
+  lifetime:
+    sec: 1
+    nanosec: 0
+  frame_locked: false
+  points:
+  - x: 0.5
+    y: 0.5
+    z: 0.0
+  - x: -0.5
+    y: 0.5
+    z: 0.0
+  - x: -0.5
+    y: -0.5
+    z: 0.0
+  - x: 0.5
+    y: -0.5
+    z: 0.0
+  - x: 0.5
+    y: 0.5
+    z: 0.0
+  colors: []
+  texture_resource: ''
+  texture:
+    header:
+      stamp:
+        sec: 0
+        nanosec: 0
+      frame_id: ''
+    format: ''
+    data: []
+  uv_coordinates: []
+  text: ''
+  mesh_resource: ''
+  mesh_file:
+    filename: ''
+    data: []
+  mesh_use_embedded_materials: false
+- header:
+    stamp:
+      sec: 1781178376
+      nanosec: 417253748
+    frame_id: map
+  ns: tracked_objects_text
+  id: 0
+  type: 9
+  action: 0
+  pose:
+    position:
+      x: 0.6675415150797075
+      y: 3.167541519386763
+      z: 0.55
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 1.0
+  scale:
+    x: 0.0
+    y: 0.0
+    z: 0.12
+  color:
+    r: 1.0
+    g: 0.0
+    b: 0.0
+    a: 0.949999988079071
+  lifetime:
+    sec: 1
+    nanosec: 0
+  frame_locked: false
+  points: []
+  colors: []
+  texture_resource: ''
+  texture:
+    header:
+      stamp:
+        sec: 0
+        nanosec: 0
+      frame_id: ''
+    format: ''
+    data: []
+  uv_coordinates: []
+  text: bed_0(62%)n=2231
+  mesh_resource: ''
+  mesh_file:
+    filename: ''
+    data: []
+  mesh_use_embedded_materials: false
+- header:
+    stamp:
+      sec: 1781178376
+      nanosec: 417253748
+    frame_id: map
+  ns: tracked_objects_box
+  id: 1
+  type: 4
+  action: 0
+  pose:
+    position:
+      x: 0.6675415150797075
+      y: 3.167541519386763
+      z: 0.15
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 1.0
+  scale:
+    x: 0.05
+    y: 0.0
+    z: 0.0
+  color:
+    r: 0.20000000298023224
+    g: 0.800000011920929
+    b: 0.30000001192092896
+    a: 0.8999999761581421
+  lifetime:
+    sec: 1
+    nanosec: 0
+  frame_locked: false
+  points:
+  - x: 0.5
+    y: 0.5
+    z: 0.0
+  - x: -0.5
+    y: 0.5
+    z: 0.0
+  - x: -0.5
+    y: -0.5
+    z: 0.0
+  - x: 0.5
+    y: -0.5
+    z: 0.0
+  - x: 0.5
+    y: 0.5
+    z: 0.0
+  colors: []
+  texture_resource: ''
+  texture:
+    header:
+      stamp:
+        sec: 0
+        nanosec: 0
+      frame_id: ''
+    format: ''
+    data: []
+  uv_coordinates: []
+  text: ''
+  mesh_resource: ''
+  mesh_file:
+    filename: ''
+    data: []
+  mesh_use_embedded_materials: false
+- header:
+    stamp:
+      sec: 1781178376
+      nanosec: 417253748
+    frame_id: map
+  ns: tracked_objects_text
+  id: 1
+  type: 9
+  action: 0
+  pose:
+    position:
+      x: 0.6675415150797075
+      y: 3.167541519386763
+      z: 0.55
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 1.0
+  scale:
+    x: 0.0
+    y: 0.0
+    z: 0.12
+  color:
+    r: 1.0
+    g: 0.0
+    b: 0.0
+    a: 0.949999988079071
+  lifetime:
+    sec: 1
+    nanosec: 0
+  frame_locked: false
+  points: []
+  colors: []
+  texture_resource: ''
+  texture:
+    header:
+      stamp:
+        sec: 0
+        nanosec: 0
+      frame_id: ''
+    format: ''
+    data: []
+  uv_coordinates: []
+  text: dining_table_0(37%)n=2231
+  mesh_resource: ''
+  mesh_file:
+    filename: ''
+    data: []
+  mesh_use_embedded_materials: false
+---
+weiyu@weiyu-Legion:~/vscode_workspace/ros2_wp$ 
+
+

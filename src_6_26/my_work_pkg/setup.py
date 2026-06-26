@@ -1,0 +1,40 @@
+import os
+from glob import glob
+from setuptools import find_packages, setup
+
+package_name = 'my_work_pkg'
+
+setup(
+    name=package_name,
+    version='0.0.0',
+    packages=find_packages(exclude=['test']),
+    data_files=[
+        ('share/ament_index/resource_index/packages',
+            ['resource/' + package_name]),
+        ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name, 'launch'),
+            glob(os.path.join('launch', '*launch.[pxy][yma]*'))),
+    ],
+    install_requires=['setuptools'],
+    zip_safe=True,
+    maintainer='weiyu',
+    maintainer_email='1074793744@qq.com',
+    description='TODO: Package description',
+    license='TODO: License declaration',
+    extras_require={
+        'test': [
+            'pytest',
+        ],
+    },
+    entry_points={
+        'console_scripts': [
+            'semantic_projection_node = my_work_pkg.semantic_projection_node:main',
+            'yolo_seed_projection_node = my_work_pkg.yolo_seed_projection_node:main',
+            'frontend_bridge_node = my_work_pkg.frontend_bridge_node:main',
+            'loop_closure_guard_node = my_work_pkg.loop_closure_guard_node:main',
+            'raw_seed_visualizer_node = my_work_pkg.raw_seed_visualizer_node:main',
+            'seed_tracker_node = my_work_pkg.seed_tracker_node:main',
+            'semantic_diag_node = my_work_pkg.semantic_diag_node:main',
+        ],
+    },
+)

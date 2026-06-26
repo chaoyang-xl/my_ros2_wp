@@ -1,0 +1,19 @@
+ai_recorder_node:
+  ros__parameters:
+    image_topic: /camera/color/image_raw
+    output_dir: /home/orangepi/yolo_results
+    enable_detect: true
+    enable_pose: true
+    detect_model: /home/orangepi/models/yolo11n.rknn
+    pose_model: /home/orangepi/models/yolo11n-pose.rknn
+    imgsz: 640
+    conf: 0.35
+    iou: 0.45
+    frame_skip: 0
+    save_every_n: 30
+    enable_http: true
+    http_host: 0.0.0.0
+    http_port: 8088
+    publish_debug_image: true
+    result_topic: /yolo/results_json
+    debug_image_topic: /yolo/debug_image
