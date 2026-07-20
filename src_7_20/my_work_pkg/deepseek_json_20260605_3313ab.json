@@ -1,0 +1,125 @@
+{
+  "stamp_sec": 1780639825,
+  "stamp_nanosec": 790170112,
+  "wall_time": "2026-06-05T14:10:26.318",
+  "image_topic": "/camera/color/image_raw",
+  "image_shape": [720, 1280, 3],
+  "detect_model": "/home/orangepi/models/yolo11n_rknn_model",
+  "pose_model": "/home/orangepi/models/yolo11n-pose_rknn_model",
+  "detections": [
+    {
+      "class_id": 0,
+      "class_name": "person",
+      "confidence": 0.8857421875,
+      "xyxy": [855.0, 2.75, 1279.0, 711.25]
+    },
+    {
+      "class_id": 0,
+      "class_name": "person",
+      "confidence": 0.88525390625,
+      "xyxy": [0.625, 2.5, 242.875, 708.5]
+    },
+    {
+      "class_id": 62,
+      "class_name": "tv",
+      "confidence": 0.53857421875,
+      "xyxy": [769.75, 549.5, 910.25, 716.5]
+    },
+    {
+      "class_id": 56,
+      "class_name": "chair",
+      "confidence": 0.1656494140625,
+      "xyxy": [110.8125, 251.5, 311.1875, 567.5]
+    },
+    {
+      "class_id": 59,
+      "class_name": "bed",
+      "confidence": 0.1610107421875,
+      "xyxy": [186.0, 492.0, 752.0, 715.0]
+    }
+  ],
+  "poses": [
+    {
+      "class_id": 0,
+      "class_name": "person",
+      "confidence": 0.93408203125,
+      "xyxy": [856.25, 0.0, 1279.75, 709.75],
+      "keypoints": [
+        {"name": "nose",          "x": 1280.0, "y": 181.5,  "confidence": 0.037445068359375},
+        {"name": "left_eye",      "x": 1278.0, "y": 148.0,  "confidence": 0.004608154296875},
+        {"name": "right_eye",     "x": 1280.0, "y": 139.0,  "confidence": 0.0960693359375},
+        {"name": "left_ear",      "x": 1188.0, "y": 166.5,  "confidence": 0.01953125},
+        {"name": "right_ear",     "x": 1209.0, "y": 170.25, "confidence": 0.607421875},
+        {"name": "left_shoulder", "x": 1077.0, "y": 462.5,  "confidence": 0.04150390625},
+        {"name": "right_shoulder","x": 1034.0, "y": 502.0,  "confidence": 0.6796875},
+        {"name": "left_elbow",    "x": 906.0,  "y": 661.0,  "confidence": 0.00177001953125},
+        {"name": "right_elbow",   "x": 887.0,  "y": 720.0,  "confidence": 0.079833984375},
+        {"name": "left_wrist",    "x": 924.0,  "y": 620.5,  "confidence": 0.0057373046875},
+        {"name": "right_wrist",   "x": 971.5,  "y": 660.0,  "confidence": 0.07562255859375},
+        {"name": "left_hip",      "x": 991.5,  "y": 666.0,  "confidence": 0.001800537109375},
+        {"name": "right_hip",     "x": 972.0,  "y": 697.5,  "confidence": 0.007659912109375},
+        {"name": "left_knee",     "x": 1085.0, "y": 585.0,  "confidence": 0.00347900390625},
+        {"name": "right_knee",    "x": 1046.0, "y": 627.0,  "confidence": 0.01129150390625},
+        {"name": "left_ankle",    "x": 1082.0, "y": 525.0,  "confidence": 0.00604248046875},
+        {"name": "right_ankle",   "x": 1135.0, "y": 558.0,  "confidence": 0.011627197265625}
+      ],
+      "posture": "unknown",
+      "posture_confidence": 0.2,
+      "action_tags": [],
+      "posture_features": {
+        "bbox_aspect_w_div_h": 0.597,
+        "valid_core_keypoints": 1,
+        "torso_angle_from_vertical_deg": null,
+        "body_angle_from_vertical_deg": null,
+        "hip_knee_vertical_ratio": null,
+        "knee_ankle_vertical_ratio": null,
+        "head_to_hip_vertical_ratio": null
+      },
+      "posture_reasons": ["bbox_tall", "not_enough_core_keypoints"]
+    },
+    {
+      "class_id": 0,
+      "class_name": "person",
+      "confidence": 0.90087890625,
+      "xyxy": [0.0, 0.5, 243.25, 711.5],
+      "keypoints": [
+        {"name": "nose",          "x": 14.625,  "y": 99.0,  "confidence": 0.015869140625},
+        {"name": "left_eye",      "x": 23.25,   "y": 66.25, "confidence": 0.03070068359375},
+        {"name": "right_eye",     "x": 23.9375, "y": 70.25, "confidence": 0.001617431640625},
+        {"name": "left_ear",      "x": 74.25,   "y": 113.0, "confidence": 0.64892578125},
+        {"name": "right_ear",     "x": 91.8125, "y": 111.0, "confidence": 0.01470947265625},
+        {"name": "left_shoulder", "x": 138.375, "y": 400.0, "confidence": 0.81884765625},
+        {"name": "right_shoulder","x": 91.0,    "y": 353.0, "confidence": 0.175048828125},
+        {"name": "left_elbow",    "x": 30.625,  "y": 660.5, "confidence": 0.26220703125},
+        {"name": "right_elbow",   "x": 32.5,    "y": 581.0, "confidence": 0.011444091796875},
+        {"name": "left_wrist",    "x": 0.0,     "y": 559.5, "confidence": 0.08319091796875},
+        {"name": "right_wrist",   "x": 0.0,     "y": 551.0, "confidence": 0.009490966796875},
+        {"name": "left_hip",      "x": 32.8125, "y": 720.0, "confidence": 0.023712158203125},
+        {"name": "right_hip",     "x": 2.875,   "y": 710.0, "confidence": 0.007598876953125},
+        {"name": "left_knee",     "x": 46.5,    "y": 566.0, "confidence": 0.004852294921875},
+        {"name": "right_knee",    "x": 17.1875, "y": 559.0, "confidence": 0.00201416015625},
+        {"name": "left_ankle",    "x": 0.0,     "y": 604.0, "confidence": 0.00262451171875},
+        {"name": "right_ankle",   "x": 0.0,     "y": 648.5, "confidence": 0.001708984375}
+      ],
+      "posture": "unknown",
+      "posture_confidence": 0.2,
+      "action_tags": [],
+      "posture_features": {
+        "bbox_aspect_w_div_h": 0.342,
+        "valid_core_keypoints": 1,
+        "torso_angle_from_vertical_deg": null,
+        "body_angle_from_vertical_deg": null,
+        "hip_knee_vertical_ratio": null,
+        "knee_ankle_vertical_ratio": null,
+        "head_to_hip_vertical_ratio": null
+      },
+      "posture_reasons": ["bbox_tall", "not_enough_core_keypoints"]
+    }
+  ],
+  "posture_summary": {
+    "unknown": 2
+  },
+  "fall_suspected": false,
+  "latency_ms": 197.05,
+  "infer_count": 222
+}
