@@ -1,0 +1,5 @@
+# Optional dependencies for offline evaluation and 3D viewing; ROS nodes do not require these.
+numpy>=1.24
+opencv-python>=4.8
+open3d>=0.18
+ultralytics>=8.3

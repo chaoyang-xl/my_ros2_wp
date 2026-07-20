@@ -1,0 +1,32 @@
+# Optional dependencies for the separate MobileSAM offline/ROS entrypoints.
+torch>=2.0
+torchvision>=0.15
+timm>=0.9
+
+#   conda run -n opi_yolo_eval python \
+#     scripts/evaluate_sam_projection_tracking.py \
+#     --data-root "$OUTPUT_ROOT/dataset" \
+#     --output "$OUTPUT_ROOT/tracking_sam_final" \
+#     --start 0 \
+#     --frames 0 \
+#     --confidence 0.50 \
+#     --pixel-stride 2 \
+#     --voxel-size 0.02 \
+#     --overlap-radius 0.04 \
+#     --max-centroid-distance-m 0.75 \
+#     --min-geometric-overlap 0.08 \
+#     --association-threshold 0.50 \
+#     --geometry-weight 0.70 \
+#     --semantic-weight 0.30 \
+#     --observation-cluster-eps 0.10 \
+#     --observation-cluster-min-points 10 \
+#     --max-extent-growth 1.50 \
+#     --denoise-interval 20 \
+#     --map-merge-interval 0 \
+#     --min-confirmed-observations 8 \
+#     --candidate-max-missed-frames 30 \
+#     --sam-source MobileSAM \
+#     --sam-checkpoint /home/weiyu/vscode_workspace/models/mobile_sam.pt \
+#     --mask-erode-px 2 \
+#     --device 0 \
+#     --progress-every 100
