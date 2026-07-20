@@ -1,0 +1,3 @@
+float64 temperature
+bool is_operational
+string debug_message
