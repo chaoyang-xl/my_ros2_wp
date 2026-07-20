@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<robot name="ranger_mini_v2">
+  <link name="base_footprint"/>
+
+  <!-- ================= base_link ================= -->
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.12" radius="0.10"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0.1 0.1 1.0 0.5"/>
+      </material>
+    </visual>
+  </link>
+
+  <!-- ================= base_footprint → base_link ================= -->
+  <joint name="base_footprint_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child  link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ================= laser ================= -->
+  <link name="laser">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia ixx="1e-4" ixy="0" ixz="0" iyy="1e-4" iyz="0" izz="1e-4"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.05" radius="0.04"/>
+      </geometry>
+      <material name="red">
+        <color rgba="0.8 0.2 0.2 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <!-- ================= base_link → laser (标定参数在这里 ★) ================= -->
+  <joint name="laser_joint" type="fixed">
+    <parent link="base_link"/>
+    <child  link="laser"/>
+    <origin xyz="0.0 0.0 0.25" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ================= camera ================= -->
+  <link name="camera_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.05"/>
+      <inertia ixx="1e-5" ixy="0" ixz="0" iyy="1e-5" iyz="0" izz="1e-5"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.04 0.06 0.03"/>
+      </geometry>
+      <material name="green">
+        <color rgba="0.1 0.7 0.2 1.0"/>
+      </material>
+    </visual>
+  </link>
+
+  <!-- ================= laser → camera_link (粗标定参数在这里 ★) ================= -->
+  <joint name="laser_to_camera_joint" type="fixed">
+    <parent link="laser"/>
+    <child  link="camera_link"/>
+    <origin xyz="0.02 0.0 0.125" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ROS camera optical frame: x right, y down, z forward -->
+  <link name="camera_optical_frame"/>
+
+  <joint name="camera_optical_joint" type="fixed">
+    <parent link="camera_link"/>
+    <child  link="camera_optical_frame"/>
+    <origin xyz="0 0 0" rpy="-1.57079632679 0 -1.57079632679"/>
+  </joint>
+
+</robot>

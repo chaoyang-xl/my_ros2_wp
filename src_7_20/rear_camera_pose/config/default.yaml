@@ -1,0 +1,27 @@
+# ---- usb_cam_publisher (V4L2 → ROS topic) ----
+usb_cam_publisher:
+  ros__parameters:
+    camera_device: "/dev/video2"
+    image_topic: "/rear_camera/image_raw"
+    width: 640
+    height: 480
+    fps: 15
+
+# ---- rear_pose_node (subscribe → YOLO-pose → record) ----
+rear_pose_node:
+  ros__parameters:
+    image_topic: "/rear_camera/image_raw"
+    pose_model: "/home/weiyu/vscode_workspace/models/yolo11n-pose.pt"
+    imgsz: 640
+    conf: 0.25
+    iou: 0.45
+    frame_skip: 0
+    output_dir: "~/rear_pose_results"
+    result_topic: "/rear_pose/results_json"
+    publish_debug_image: true
+    debug_image_topic: "/rear_pose/debug_image"
+    save_every_n: 30
+    enable_http: true
+    http_host: "0.0.0.0"
+    http_port: 8089
+    mjpeg_fps: 8
