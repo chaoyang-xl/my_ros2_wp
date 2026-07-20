@@ -1,0 +1,21 @@
+{
+  "stamp_sec": 1782715841.7193065,
+  "frame_id": "map",
+  "count": 1,
+  "objects": [
+    {
+      "id": "umbrella_1",
+      "label": "umbrella",
+      "state": "confirmed",
+      "source": "snapped",
+      "x": -2.6186088314381757,
+      "y": 3.7726968041251814,
+      "size_x": 0.4000000059604645,
+      "size_y": 0.30000000447034836,
+      "confidence": 0.5911464346933751,
+      "times_seen": 2709,
+      "last_seen": 1782715841.1317713,
+      "created_at": 1782715725.670932
+    }
+  ]
+}
